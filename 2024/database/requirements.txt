@@ -4,3 +4,7 @@ sqlalchemy
 pymysql
 pandas
 ipykernel
+openpyxl
+pandasql
+dataframe_sql
+seaborn
