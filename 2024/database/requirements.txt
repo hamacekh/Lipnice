@@ -6,5 +6,4 @@ pandas
 ipykernel
 openpyxl
 pandasql
-dataframe_sql
 seaborn
