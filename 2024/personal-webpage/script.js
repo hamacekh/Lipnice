@@ -19,5 +19,5 @@ function showSection(sectionId) {
 
 // Nastavit výchozí zobrazení první sekce
 document.addEventListener("DOMContentLoaded", function() {
-    showSection('section-contact');
+    showSection('kontakt');
 });
