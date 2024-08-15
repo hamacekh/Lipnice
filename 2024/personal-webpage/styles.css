@@ -8,20 +8,20 @@
 .contact-item strong {
     width: 100px; /* Šířka pro zarovnání popisků */
     display: inline-block;
+    font-weight: bold;
+    color: #333;
 }
 
 .contact-item a, .contact-item span {
-    text-decoration: none;
-    color: #333; /* Barva textu */
+    color: #000; /* Barva textu */
     background-color: transparent; /* Odstranění pozadí */
+    text-decoration: none; /* Odstranění podtržení */
     padding: 0; /* Odstranění paddingu */
     margin-top: 0;
 }
 
 .contact-item a:hover {
-    text-decoration: underline;
-    color: #000; /* Zvýraznění textu při hoveru */
-    background-color: transparent;
+    text-decoration: underline; /* Podtržení při hoveru pro zvýraznění odkazu */
 }
 
 /* Původní styly */
@@ -35,39 +35,51 @@ body {
 header {
     background-color: #333;
     color: white;
-    padding: 15px 0;
+    padding: 15px;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 24px;
+.container {
+    display: flex;
 }
 
-nav ul {
+/* Styl pro boční panel */
+.sidebar {
+    width: 200px;
+    background-color: #444;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.sidebar ul li {
+    margin-bottom: 15px;
 }
 
-nav ul li a {
+.sidebar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    display: block;
+    padding: 10px;
+    background-color: #333;
     border-radius: 5px;
 }
 
-nav ul li a.active {
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
     background-color: #555;
 }
 
+/* Styl pro hlavní obsah */
 main {
+    flex-grow: 1;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .content-section {
@@ -79,22 +91,34 @@ main {
 }
 
 a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+    color: #333;
     text-decoration: none;
-    border-radius: 5px;
 }
 
 a:hover {
-    background-color: #555;
+    background-color: transparent;
+    color: #000;
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 5px 0;
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+        padding: 10px;
     }
 }
