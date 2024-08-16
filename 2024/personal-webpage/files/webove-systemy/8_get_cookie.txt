@@ -1,0 +1,4 @@
+GET /page.html HTTP/1.1
+Host: www.example.com
+Cookie: sessionId=abc123
+Connection: close

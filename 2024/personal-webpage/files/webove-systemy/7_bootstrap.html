@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výukové materiály - Jenda Hamáček</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark text-white text-center p-3">
+        <h1>Výukové materiály - Jenda Hamáček</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 bg-secondary text-white p-4">
+                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="v-pills-kontakt-tab" data-toggle="pill" href="#kontakt" role="tab" aria-controls="kontakt" aria-selected="true">Kontakt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="v-pills-webove-systemy-tab" data-toggle="pill" href="#webove-systemy" role="tab" aria-controls="webove-systemy" aria-selected="false">Webové systémy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="v-pills-databaze-tab" data-toggle="pill" href="#databaze" role="tab" aria-controls="databaze" aria-selected="false">Databáze</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="v-pills-big-data-ai-tab" data-toggle="pill" href="#big-data-ai" role="tab" aria-controls="big-data-ai" aria-selected="false">Big data + AI</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="col-md-9 col-lg-10 p-4">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="kontakt" role="tabpanel" aria-labelledby="v-pills-kontakt-tab">
+                        <h2>Kontakt</h2>
+                        <address>
+                            <div>
+                                <strong>Jméno:</strong> Jenda Hamáček
+                            </div>
+                            <div>
+                                <strong>Email:</strong> <a href="mailto:jenda.lipnice@hamacek.me">jenda.lipnice@hamacek.me</a>
+                            </div>
+                            <div>
+                                <strong>Facebook:</strong> <a href="https://www.facebook.com/hamacekh" target="_blank">facebook.com/hamacekh</a>
+                            </div>
+                            <div>
+                                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hamacekh" target="_blank">linkedin.com/in/hamacekh</a>
+                            </div>
+                        </address>
+                    </div>
+
+                    <div class="tab-pane fade" id="webove-systemy" role="tabpanel" aria-labelledby="v-pills-webove-systemy-tab">
+                        <h2>Webové systémy</h2>
+                        <p>Zde můžete stáhnout výukové materiály.</p>
+                        <ul>
+                            <li><a href="files/webove-systemy/2_html5.html">Čistá html5 stránka</a></li>
+                            <li><a href="files/webove-systemy/3_html5_css.html">Html stránka s css3</a></li>
+                            <li><a href="files/webove-systemy/4_outdated_format.html">Odstrašující případ jak nedělat formátování</a></li>
+                            <li><a href="files/webove-systemy/5_full_page.html">Kompletní web s javascriptem</a></li>
+                            <li><a href="files/webove-systemy/6_shopping_list_php.php">Příklad backendového zpracování</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane fade" id="databaze" role="tabpanel" aria-labelledby="v-pills-databaze-tab">
+                        <h2>Databáze</h2>
+                        <p>Zde můžete stáhnout další výukové materiály.</p>
+                        <a href="material2.pdf" download>Stáhnout materiál 2</a>
+                    </div>
+
+                    <div class="tab-pane fade" id="big-data-ai" role="tabpanel" aria-labelledby="v-pills-big-data-ai-tab">
+                        <h2>Big data + AI</h2>
+                        <p>Zde můžete stáhnout další výukové materiály.</p>
+                        <a href="material3.pdf" download>Stáhnout materiál 3</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
