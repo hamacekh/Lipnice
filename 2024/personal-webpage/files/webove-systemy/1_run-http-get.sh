@@ -1,1 +1,1 @@
-telnet localhost 8080 < get.txt
+telnet chrys 80
