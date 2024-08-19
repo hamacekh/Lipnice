@@ -1,4 +1,4 @@
-GET /page.html HTTP/1.1
-Host: www.example.com
+GET /~jenda/ahoj.txt HTTP/1.1
+Host: chrys
 Cookie: sessionId=abc123
 Connection: close

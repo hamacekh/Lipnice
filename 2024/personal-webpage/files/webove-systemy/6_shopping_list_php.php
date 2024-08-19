@@ -1,6 +1,6 @@
 <?php
 // Cesta k souboru, kde bude uložen nákupní seznam
-$file = 'shopping_list.txt';
+$file = '/tmp/shopping_list_jenda.txt';
 
 // Funkce pro načtení seznamu ze souboru
 function loadShoppingList($file) {
@@ -48,7 +48,7 @@ if (isset($_GET['delete'])) {
     <h1>Nákupní seznam</h1>
     
     <!-- Formulář pro přidání nové položky -->
-    <form method="post" action="">
+    <form method="post" action="?">
         <input type="text" name="item" placeholder="Přidej položku">
         <button type="submit" name="add_item">Přidat</button>
     </form>
