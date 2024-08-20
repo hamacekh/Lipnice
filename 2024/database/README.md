@@ -12,8 +12,11 @@ Obsah je ke stažení ve veřejném github repozitáři https://github.com/hamac
 
 ## Příprava prostředí
 - Nainstalovat python https://www.python.org/downloads/
-- Doinstalovat python pip balíčky vyjmenované v souboru `requirements.txt`. To jde například pomocí příkazu `pip install -r requirements.txt` v konzoli.
 - Nainstalovat nějaký editor, který umí pracovat s jupyter notebooky. Doporučuji zdarma Visual Studio Code https://code.visualstudio.com 
+- Do Visual Studio Code doinstalovat doplněk Jupyter
+- Otevřít si terminál a přesunout se do složky s tímto projektem. Pokud máte projekt otevřený ve Visual Studio Code, stačí z menu "Terminál > Nový terminál"
+- Doinstalovat python pip balíčky vyjmenované v souboru `requirements.txt`. To jde například pomocí příkazu `pip install -r requirements.txt` v konzoli.
+  - Některé instalace pythonu instalují místo `python` a `pip` jejich varianty `python3` a `pip3`. V takovém případě zkuste `pip3 install -r requirements.txt`
 
 ## Poznámky k hodině
 Máme skutečná data sesbírané z Netflixu.
@@ -28,9 +31,9 @@ Představme si, že máme seznam titulů s informacemi
 
 Ukázat reprezentaci, datové typy v tabulce.
 
-Představme si, že máme tabulku Lidí. O každém z nich máme informace:
-- Jméno filmové postavy
-- Jméno herce, který jí hraje
+Představme si, že máme tabulku režisérů. O každém z nich máme informace:
+- Jméno režiséra
+- Datum narození
 
 Vymyslete
 1. jak reprezentovat tabulku lidí
